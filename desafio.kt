@@ -33,15 +33,15 @@ fun main() {
         ConteudoEducacional("desafios Java", 60)
     )
 
-    val paulo = Usuario("Paulo")
-    val felipe = Usuario("Felipe")
-    val daniela = Usuario("Daniela")
+    val paulo = Usuario("Amand")
+    val felipe = Usuario("Luigi")
+    val daniela = Usuario("Peach")
 
     val formacaoKotlin = Formacao("Kotlin", kotlin, Nivel.INTERMEDIARIO)
     val formacaoJava = Formacao("Java", java, Nivel.BASICO)
 
-    formacaoJava.matricular(paulo, felipe)
-    formacaoKotlin.matricular(daniela, paulo)
+    formacaoJava.matricular(amand, Luigi)
+    formacaoKotlin.matricular(peach, luigi)
 
     println("Alunos da trilha Java: ${formacaoJava.inscritos.joinToString { it.name }}")
     println("Alunos da trilha Kotlin: ${formacaoKotlin.inscritos.joinToString { it.name }}")
